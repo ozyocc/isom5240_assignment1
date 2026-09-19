@@ -1,3 +1,5 @@
+# ISOM5240 Assignment Ou Zhiyong
+# import part
 import io
 import re
 
@@ -8,10 +10,10 @@ from gtts import gTTS
 
 
 # ---------------------------------------------------------
-# Page configuration
+# Page configuration is what we can see on the web page heading
 # ---------------------------------------------------------
 st.set_page_config(
-    page_title="Magic Story Maker",
+    page_title="Magic Story Maker - ISOM5240",
     page_icon="📖",
     layout="centered"
 )
@@ -49,7 +51,7 @@ def load_story_model():
 
 
 # ---------------------------------------------------------
-# Image captioning
+# Image captioning Function
 # ---------------------------------------------------------
 def generate_image_caption(image, captioner):
     """
@@ -74,7 +76,7 @@ def generate_image_caption(image, captioner):
 
 
 # ---------------------------------------------------------
-# Story generation
+# Story generation Function
 # ---------------------------------------------------------
 def generate_story(caption, story_generator):
     """
@@ -115,7 +117,7 @@ Requirements:
 
 
 # ---------------------------------------------------------
-# Word-count helper
+# Word-count helper Function
 # ---------------------------------------------------------
 def count_words(text):
     """
@@ -150,7 +152,7 @@ def enforce_word_limit(text, minimum=50, maximum=100):
 
 
 # ---------------------------------------------------------
-# Text-to-speech
+# Text-to-speech Function
 # ---------------------------------------------------------
 def generate_audio(story):
     """
